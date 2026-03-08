@@ -23,14 +23,15 @@ strategy notes, and knowledge retrieval using AI-assisted tools.
 Model: Gemini 2.5 Flash  
 Source: Google Gemini API
 
+Gemini was selected because it provides fast response generation and is easily integrated through a 
+Python API. The model is used only for response generation, while document retrieval is handled locally 
+through embeddings and FAISS vector search.
+
 ## Dataset
 The chatbot uses a small markdown document (`data/zzz_notes.md`) containing example notes related to 
 game strategy and build planning. The document is split into smaller chunks and embedded into a vector 
 space for similarity-based retrieval.
 
-Gemini was selected because it provides fast response generation and is easily integrated through a 
-Python API. The model is used only for response generation, while document retrieval is handled locally 
-through embeddings and FAISS vector search.
   
 ## Development Process (Agile)
 Sprint 1
